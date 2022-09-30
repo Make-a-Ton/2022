@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Montserrat, Source Sans Pro and Source Code Pro
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Source+Code+Pro:wght@700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.gradient-primary {
+  background: linear-gradient(
+    91.05deg,
+    #38e769 -0.02%,
+    #2ad5ac 50.98%,
+    #1dc4a5 99.98%
+  );
+}
+
+.gradient-hero {
+  background: linear-gradient(91.05deg, #2ab7d5 -0.02%, #387ee7 99.98%);
+}
+
+.gradient-platinum {
+  background: linear-gradient(
+    90.85deg,
+    #ffffff 15.63%,
+    #84ffff 52.08%,
+    #c8eafd 68.23%,
+    #ffffff 100%
+  );
+}
+
+.gradient-gold {
+  background: linear-gradient(
+    90.85deg,
+    #ffe600 15.63%,
+    #e5fe9d 52.08%,
+    #ffe600 71.35%,
+    #fafd5b 100%
+  );
+}
+
+.gradient-silver {
+  background: linear-gradient(
+    90.85deg,
+    #ffffff 15.63%,
+    #d5fff7 52.08%,
+    #ffffff 71.35%,
+    #ffffff 100%
+  );
+}
+
+.gradient-community {
+  background: linear-gradient(
+    90.85deg,
+    #91eafd 15.63%,
+    #a7bafe 42.19%,
+    #77ffe7 67.71%,
+    #42c7f1 100%
+  );
+}
+
+.gradient-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero_container {
+  background: url(../public/assets/hero-bg.svg);
+}
