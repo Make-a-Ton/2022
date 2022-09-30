@@ -6,7 +6,7 @@ import { MdLocationPin } from "react-icons/md";
 
 const Devfolio = () => {
   return (
-    <div className="z-[10] font-montserrat fixed lg:left-[120px] top-0 text-white bg-primary-light p-[12px] rounded-b-[10px] min-w-[220px]">
+    <div className="z-[9999] font-montserrat fixed lg:left-[120px] top-0 text-white bg-primary-light p-[12px] rounded-b-[10px] min-w-[220px]">
       <h2 className="font-black text-[22px]">Oct. 27 & 28</h2>
       <p className="text-[16px] font-medium">Offline</p>
       <p className="flex items-center text-[14px] font-medium mt-[10px]">

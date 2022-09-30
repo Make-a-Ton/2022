@@ -2,13 +2,15 @@ import type { NextPage } from "next";
 
 import Default from "@presentation/Layouts/Default";
 import Devfolio from "@presentation/Devfolio";
+import Reasons from "@presentation/Reasons";
+import FAQ from "@presentation/common/FAQ";
 
-import HeroBG from "@public/assets/hero-bg.svg";
+// import HeroBG from "@public/assets/hero-bg.svg";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Default
+      {/* <Default
         extra={
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -22,7 +24,9 @@ const Home: NextPage = () => {
           <h1>Hello there</h1>
           <Devfolio />
         </main>
-      </Default>
+      </Default> */}
+      <Reasons />
+      {/* <FAQ /> */}
     </>
   );
 };
