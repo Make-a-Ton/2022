@@ -12,7 +12,7 @@ const Reasons = () => {
         alt="reasons-illustration"
       />
       <div className="pt-[120px] max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
-        <h2 className="font-montserrat font-extrabold leading-[78px] z-20 w-fit bg-clip-text text-transparent text-6xl gradient-primary gradient-text">
+        <h2 className="font-montserrat font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
           Reasons to join
         </h2>
         <h3 className="text-white leading-[50px] z-20 font-bold text-4xl uppercase pb-[10px]">
@@ -27,7 +27,7 @@ const Reasons = () => {
       </div>
       <div className="py-[120px] max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
         <div className="flex justify-end">
-          <h2 className="font-montserrat leading-[78px] font-extrabold z-20 w-fit bg-clip-text text-transparent text-6xl gradient-primary gradient-text">
+          <h2 className="font-montserrat leading-[78px] font-extrabold text-6xl gradient-primary gradient-text">
             Prizes worth $125K+
           </h2>
         </div>

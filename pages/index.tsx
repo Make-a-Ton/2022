@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 
-import Default from "@presentation/Layouts/Default";
 import Devfolio from "@presentation/Devfolio";
 import Reasons from "@presentation/Reasons";
-import FAQ from "@presentation/common/FAQ";
 import Image from "next/image";
 import Button from "@presentation/common/Button";
+import Schedule from "@presentation/Schedule";
 
 // import HeroBG from "@public/assets/hero-bg.svg";
 
@@ -54,7 +53,7 @@ const Home: NextPage = () => {
       </section>
       <Devfolio />
       <Reasons />
-      {/* <FAQ /> */}
+      <Schedule />
     </>
   );
 };
