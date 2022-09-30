@@ -12,7 +12,10 @@ const Devfolio = () => {
       <p className="flex items-center text-[14px] font-medium mt-[10px]">
         <MdLocationPin size="2em" color="#FFFFFF" /> CITTIC, CUSAT
       </p>
-      <Button className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px] mt-[15px]">
+      <Button
+        className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px] mt-[15px]"
+        href="https://makeaton.devfolio.co"
+      >
         <Image
           src="/assets/icons/devfolio.svg"
           alt="Devfolio Logo"

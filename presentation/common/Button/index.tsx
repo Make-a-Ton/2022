@@ -6,7 +6,14 @@ const Button = (
     HTMLAnchorElement
   >
 ) => {
-  return <a {...props} className={`px-[16px] py-[8px] ${props.className}`}></a>;
+  return (
+    <a
+      {...props}
+      className={`px-[16px] py-[8px] ${props.className}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    ></a>
+  );
 };
 
 export default Button;
