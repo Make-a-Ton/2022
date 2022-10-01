@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
 import { motion } from "framer-motion";
@@ -84,12 +83,12 @@ const Loader = ({
           variants={item}
           className="absolute left-[10%] top-[15%]"
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/assets/loading-1.jpeg"
             height={200}
             width={400}
-            objectFit="cover"
-            className="rounded top-[50%]"
+            className="rounded top-[50%] object-cover"
             alt=""
           />
         </motion.div>
@@ -103,12 +102,12 @@ const Loader = ({
           variants={item}
           className="absolute right-[10%] bottom-[15%] z-[2]"
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/assets/loading-2.jpeg"
             height={200}
             width={400}
-            objectFit="cover"
-            className="rounded top-[50%]"
+            className="rounded top-[50%] object-cover"
             alt=""
           />
         </motion.div>

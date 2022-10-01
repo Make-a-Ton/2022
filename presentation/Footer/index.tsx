@@ -1,4 +1,3 @@
-import Image from "next/image";
 import * as React from "react";
 
 const Footer = () => {
@@ -11,7 +10,8 @@ const Footer = () => {
       >
         Powered by{" "}
         <span>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </span>
       </a>
     </footer>

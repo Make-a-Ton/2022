@@ -1,5 +1,4 @@
 import Button from "@presentation/common/Button";
-import Image from "next/image";
 import * as React from "react";
 
 import { MdLocationPin } from "react-icons/md";
@@ -56,7 +55,8 @@ const Devfolio = () => {
         className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px]"
         href="https://makeaton.devfolio.co"
       >
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/assets/icons/devfolio.svg"
           alt="Devfolio Logo"
           height={20}

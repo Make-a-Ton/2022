@@ -16,6 +16,7 @@ import {
 } from "framer-motion";
 import { ScrollerMotion, ScrollerMotionRef } from "scroller-motion";
 import FAQ from "@presentation/FAQ";
+import HeadMeta from "@presentation/HeadMeta";
 
 // import HeroBG from "@public/assets/hero-bg.svg";
 
@@ -37,6 +38,14 @@ const Home: NextPage = () => {
     <AnimateSharedLayout>
       <AnimatePresence>
         <ScrollerMotion ref={scrollerMotion}>
+          <HeadMeta
+            title="Make-a-ton 5.0 | CITTIC"
+            description="A 24 hour flagship hackathon from Cochin University of Science and Technology
+        for University students to embrace the spirit of innovation."
+            image="https://makeaton.in/ograph.jpg"
+            url="https://makeaton.in"
+            keywords="hackathon, makeaton, event"
+          />
           {loading ? (
             <motion.div key="loader" className="overflow-hidden">
               <Loader setLoading={setLoading} />

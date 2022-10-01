@@ -1,5 +1,4 @@
 import Button from "@presentation/common/Button";
-import Image from "next/image";
 import * as React from "react";
 import { motion, Variants } from "framer-motion";
 
@@ -50,7 +49,8 @@ const Hero = () => {
         className="flex flex-col items-center relative px-[32px] md:px-[64px] lg:px-[120px] "
       >
         <motion.div variants={item} className="flex items-end">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/assets/sponsors/cittic.svg"
             height={32}
             width={133}
@@ -80,7 +80,8 @@ const Hero = () => {
           href="https://makeaton.devfolio.co"
           variants={item}
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/assets/icons/devfolio.svg"
             alt="Devfolio Logo"
             height={20}
