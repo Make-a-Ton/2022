@@ -3,6 +3,17 @@ import * as React from "react";
 import { motion, Variants } from "framer-motion";
 
 const Hero = () => {
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const container: Variants = {
     hidden: { opacity: 0 },
     show: {
@@ -71,24 +82,31 @@ const Hero = () => {
         </motion.div>
         <motion.p
           variants={item}
-          className="font-black uppercase text-white text-[20px]"
+          className="font-black uppercase text-white text-[20px] mb-10"
         >
           A 24 HOUR HACKATHON TO EMBRACE THE SPIRIT OF INNOVATION
         </motion.p>
-        <Button
+        <motion.div variants={item}>
+          <motion.div
+            className="apply-button"
+            data-hackathon-slug="makeaton5.0"
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></motion.div>
+        </motion.div>
+        {/* <Button
           className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px] mt-[15px] text-white"
           href="https://makeaton.devfolio.co"
           variants={item}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/icons/devfolio.svg"
             alt="Devfolio Logo"
             height={20}
             width={20}
-          />{" "}
+          />
           <span className="ml-[6px]">Register on Devfolio</span>
-        </Button>
+        </Button> */}
       </motion.div>
     </section>
   );

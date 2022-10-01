@@ -17,6 +17,17 @@ const Devfolio = () => {
     }
   });
 
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -200 }}
@@ -51,11 +62,10 @@ const Devfolio = () => {
           </motion.div>
         </AnimatePresence>
       )}
-      <Button
+      {/* <Button
         className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px]"
         href="https://makeaton.devfolio.co"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/assets/icons/devfolio.svg"
           alt="Devfolio Logo"
@@ -63,7 +73,13 @@ const Devfolio = () => {
           width={20}
         />{" "}
         <span className="ml-[6px]">Register on Devfolio</span>
-      </Button>
+      </Button> */}
+      <div
+        className="apply-button"
+        data-hackathon-slug="makeaton5.0"
+        data-button-theme="light"
+        style={{ height: "44px", width: "312px" }}
+      ></div>
     </motion.div>
   );
 };
