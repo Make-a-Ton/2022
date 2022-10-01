@@ -5,6 +5,37 @@
 // Montserrat, Source Sans Pro and Source Code Pro
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Source+Code+Pro:wght@700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.603);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    91.05deg,
+    #38e769 -0.02%,
+    #2ad5ac 50.98%,
+    #1dc4a5 99.98%
+  );
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    91.05deg,
+    #38e769 -0.02%,
+    #2ad5ac 50.98%,
+    #1dc4a5 99.98%
+  );
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   @apply bg-primary;

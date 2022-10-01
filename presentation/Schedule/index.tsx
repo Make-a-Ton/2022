@@ -1,15 +1,32 @@
 import TimelinePoint from "@presentation/common/TimelinePoint";
 
 import { HiLocationMarker } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const Schedule = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.25,
+      },
+    },
+  };
+
   return (
     <section className="bg-primary-dark w-full">
       <div className="py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px] flex flex-col items-center">
         <h2 className="font-montserrat font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
           Schedule
         </h2>
-        <div className="flex flex-col mt-[60px]">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={container}
+          viewport={{ once: false, amount: 0.35 }}
+          className="flex flex-col mt-[60px]"
+        >
           {Array(10)
             .fill(null)
             .map((_, key) => (
@@ -26,7 +43,7 @@ const Schedule = () => {
                 key={key}
               />
             ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

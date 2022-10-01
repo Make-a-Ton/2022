@@ -44,7 +44,6 @@ const Home: NextPage = () => {
           ) : (
             <>
               <Hero />
-
               <Reasons />
               <Schedule />
               <Sponsors />

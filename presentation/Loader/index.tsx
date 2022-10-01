@@ -55,7 +55,7 @@ const Loader = ({
   setLoading: Dispatch<SetStateAction<boolean>>;
 }) => {
   return (
-    <div className="absolute top-0 left-0 h-full w-full bg-primary-dark">
+    <div className="overflow-hidden absolute top-0 left-0 h-full w-full bg-primary-dark">
       <motion.div
         variants={container}
         initial="hidden"

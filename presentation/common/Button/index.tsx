@@ -1,18 +1,15 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 
-const Button = (
-  props: React.DetailedHTMLProps<
-    React.AnchorHTMLAttributes<HTMLAnchorElement>,
-    HTMLAnchorElement
-  >
-) => {
+const Button = (props: any, { variant }: { variant?: any }) => {
   return (
-    <a
+    <motion.a
+      variants={variant}
       {...props}
       className={`px-[16px] py-[8px] ${props.className}`}
       target="_blank"
       rel="noopener noreferrer"
-    ></a>
+    ></motion.a>
   );
 };
 

@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { motion } from "framer-motion";
 interface Props {
   title: string;
   description: React.ReactNode;
@@ -8,8 +8,13 @@ interface Props {
 }
 
 const TimelinePoint = ({ title, description, timing, num }: Props) => {
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
-    <div className={`grid grid-cols-2 mb-[24px]`}>
+    <motion.div variants={item} className={`grid grid-cols-2 mb-[24px]`}>
       {num % 2 === 0 && <div></div>}
       <div
         className={`text-white transform flex items-center justify-start ${
@@ -33,7 +38,7 @@ const TimelinePoint = ({ title, description, timing, num }: Props) => {
         </div>
       </div>
       {num % 2 === 1 && <div></div>}
-    </div>
+    </motion.div>
   );
 };
 

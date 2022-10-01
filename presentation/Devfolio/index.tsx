@@ -28,7 +28,7 @@ const Devfolio = () => {
       transition={{
         duration: 0.8,
         ease: [0.6, 0.01, -0.05, 0.95],
-        delay: 0.5,
+        delay: 2,
       }}
       className="z-[9999] font-montserrat fixed lg:left-[120px] top-0 text-white bg-primary-light p-[12px] rounded-b-[10px] min-w-[220px]"
     >

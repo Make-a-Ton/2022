@@ -1,4 +1,5 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 
 const platinumSponsors = [
   "/assets/sponsors/Devfolio.png",
@@ -37,18 +38,40 @@ const Sponsors = () => {
 };
 
 const SponsorsRow = ({ sponsors }: { sponsors: string[] }) => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
-    <div className="w-full grid grid-cols-3 gap-[30px] mt-[30px]">
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      variants={container}
+      viewport={{ once: false, amount: 0.35 }}
+      className="w-full grid grid-cols-3 gap-[30px] mt-[30px]"
+    >
       {sponsors.map((sponsor) => (
-        <div
-          className="py-[40px] px-[20px] shadow-xl rounded flex items-center justify-center bg-primary-dark"
+        <motion.div
+          variants={item}
+          className="duration-150 ease-linear transform hover:scale-105 py-[40px] px-[20px] shadow-xl rounded flex items-center justify-center bg-primary-dark"
           key={sponsor}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={sponsor} alt={sponsor} className="h-[50px] object-cover" />
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
