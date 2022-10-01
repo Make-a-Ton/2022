@@ -15,14 +15,14 @@ const FAQs = () => {
   };
 
   return (
-    <section className="select-none relative py-[120px] flex flex-col items-center">
+    <section className="select-none relative pb-[220px] pt-[120px] md:py-[120px] flex flex-col items-center">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="z-[-1] top-0 left-0 absolute h-full w-full object-cover object-center"
         src="/assets/hero-bg.svg"
         alt=""
       />
-      <motion.div className="flex flex-col w-full max-w-[1440px] mx-auto  px-[32px] md:px-[64px] lg:px-[120px]">
+      <motion.div className="flex flex-col w-full max-w-[1440px] mx-auto px-[32px] md:px-[64px] lg:px-[120px]">
         <motion.h2 className="font-montserrat mb-[60px] font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
           FAQs
         </motion.h2>

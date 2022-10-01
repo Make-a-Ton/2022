@@ -43,12 +43,12 @@ export const Prizes: {
   byDevfolio: boolean;
 }[] = [
   {
-    sponsor: "1st Price",
+    sponsor: "1st Prize",
     amount: "₹30K",
     byDevfolio: false,
   },
   {
-    sponsor: "2nd Price",
+    sponsor: "2nd Prize",
     amount: "₹15K",
     byDevfolio: false,
   },

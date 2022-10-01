@@ -67,22 +67,22 @@ const Hero = () => {
             width={133}
             alt="CITTIC"
           />
-          <span className="ml-[8px] text-white text-[18px]">Presents</span>
+          <span className="ml-[20px] text-white text-[18px]">Presents</span>
         </motion.div>
         <motion.div
           variants={item}
           className="font-montserrat relative transform translate-x-[-3em]"
         >
-          <h1 className="relative gradient-hero gradient-text text-[96px] font-black">
+          <h1 className="relative gradient-hero gradient-text text-[50px] md:text-[96px] font-black">
             Make-a-ton
           </h1>
-          <span className="absolute font-semibold text-[72px] right-[-1.6em] top-[-0.1em] text-primary-light z-[10]">
+          <span className="absolute font-semibold text-[18px] md:text-[72px] right-[-1.6em] top-[-0.1em] text-primary-light z-[10]">
             5.o
           </span>
         </motion.div>
         <motion.p
           variants={item}
-          className="font-black uppercase text-white text-[20px] mb-10"
+          className="font-black uppercase text-white text-center text-[20px] mb-10"
         >
           A 24 HOUR HACKATHON TO EMBRACE THE SPIRIT OF INNOVATION
         </motion.p>

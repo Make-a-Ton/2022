@@ -13,19 +13,19 @@ const Reasons = () => {
         alt="reasons-illustration"
       />
       <div className="pt-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
-        <h2 className="font-montserrat font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
+        <h2 className="font-montserrat font-extrabold leading-[50px] md:leading-[78px] text-4xl md:text-6xl gradient-primary gradient-text">
           Reasons to join
         </h2>
-        <h3 className="text-white leading-[50px] z-20 font-bold text-4xl uppercase pb-[10px]">
+        <h3 className="text-white leading-[30px] md:leading-[50px] z-20 font-bold text-2xl  md:text-4xl uppercase pb-[10px]">
           Make-A-Ton 5.0
         </h3>
         {ReasonsContent.map((item, key) => (
           <BulletPoints key={key}>{item}</BulletPoints>
         ))}
       </div>
-      <div className="py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
+      <div className="py-[60px] md:py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
         <div className="flex justify-end">
-          <h2 className="font-montserrat leading-[78px] font-extrabold text-6xl gradient-primary gradient-text">
+          <h2 className="font-montserrat leading-[50px] md:leading-[78px] text-4xl md:text-6xl font-extrabold  gradient-primary gradient-text">
             Prizes worth $125K+
           </h2>
         </div>
@@ -41,18 +41,15 @@ const Reasons = () => {
             ))}
           </div>
           <div className="pt-[60px] flex flex-col">
-            <p className="text-white text-2xl pb-[10px]">
+            <p className="text-white text-lg md:text-2xl pb-[10px]">
               Schwags from Make-a-ton, Replit, GitHub, GCP, AWS and more!
             </p>
-            <p className="text-white text-2xl pb-[10px]">
+            <p className="text-white text-lg md:text-2xl pb-[10px]">
               Eligibility to apply for internships and full-time roles at
               Polygon & Replit!
             </p>
-            <small className="text-white text-lg">
-              * - Prizes given by Devfolio, which Make-a-Ton has no control over
-              sponsored tracks. Final Judgement will be done by the sponsors
-              only. Make-a-Ton 5.0 organizers have no responsibility in these
-              tracks.
+            <small className="text-white text-md md:text-lg">
+              * - Prizes given by Devfolio
             </small>
           </div>
         </div>

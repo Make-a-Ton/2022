@@ -31,7 +31,7 @@ const FAQ = ({ question, answer }: { question: string; answer: string }) => {
       height,
     },
     stop: {
-      height: 70,
+      height: 90,
     },
   };
 
@@ -52,7 +52,7 @@ const FAQ = ({ question, answer }: { question: string; answer: string }) => {
         onClick={() => setExpanded(!expanded)}
       >
         <div className=" flex justify-between items-center" ref={questionTitle}>
-          <p className="text-white font-bold text-2xl leading-[30px]">
+          <p className="text-white font-bold text-md md:text-2xl leading-[30px]">
             {question}
           </p>
           <motion.span
@@ -80,7 +80,7 @@ const FAQ = ({ question, answer }: { question: string; answer: string }) => {
           exit={{ opacity: 0 }}
           ref={questionAnswer}
         >
-          <p className={` py-4 text-white`}>{answer}</p>
+          <p className={`py-4 text-white `}>{answer}</p>
         </motion.div>
       </motion.div>
     </motion.div>

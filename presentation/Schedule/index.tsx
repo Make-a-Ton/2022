@@ -16,7 +16,7 @@ const Schedule = () => {
 
   return (
     <section className="bg-primary-dark w-full">
-      <div className="py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px] flex flex-col items-center">
+      <div className="py-[60px] md:py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px] flex flex-col items-center">
         <h2 className="font-montserrat font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
           Schedule
         </h2>

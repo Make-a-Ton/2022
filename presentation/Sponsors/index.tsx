@@ -15,7 +15,7 @@ const goldSponsors = [
 
 const Sponsors = () => {
   return (
-    <section className="py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px] flex flex-col items-center">
+    <section className="py-[60px] md:py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px] flex flex-col items-center">
       <h2 className="text-center font-montserrat font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
         Sponsors
       </h2>
@@ -59,7 +59,7 @@ const SponsorsRow = ({ sponsors }: { sponsors: string[] }) => {
       whileInView="show"
       variants={container}
       viewport={{ once: false, amount: 0.35 }}
-      className="w-full grid grid-cols-3 gap-[30px] mt-[30px]"
+      className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[30px]"
     >
       {sponsors.map((sponsor) => (
         <motion.div
@@ -68,7 +68,11 @@ const SponsorsRow = ({ sponsors }: { sponsors: string[] }) => {
           key={sponsor}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={sponsor} alt={sponsor} className="h-[50px] object-cover" />
+          <img
+            src={sponsor}
+            alt={sponsor}
+            className="h-[50px]  object-contain"
+          />
         </motion.div>
       ))}
     </motion.div>
