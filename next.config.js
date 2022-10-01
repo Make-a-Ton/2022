@@ -10,10 +10,6 @@ const nextConfig = {
   //     "/": { page: "/" },
   //   };
   // },
-  images: {
-    loader: "akamai",
-    path: "",
-  },
 };
 
 module.exports = nextConfig;
