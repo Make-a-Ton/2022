@@ -11,7 +11,7 @@ const Reasons = () => {
         src="/assets/reasons-bg.svg"
         alt="reasons-illustration"
       />
-      <div className="pt-[120px] max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
+      <div className="pt-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
         <h2 className="font-montserrat font-extrabold leading-[78px] text-6xl gradient-primary gradient-text">
           Reasons to join
         </h2>
@@ -25,7 +25,7 @@ const Reasons = () => {
           </BulletPoints>
         ))}
       </div>
-      <div className="py-[120px] max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
+      <div className="py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
         <div className="flex justify-end">
           <h2 className="font-montserrat leading-[78px] font-extrabold text-6xl gradient-primary gradient-text">
             Prizes worth $125K+
@@ -35,9 +35,9 @@ const Reasons = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px]">
             {Array(9)
               .fill(null)
-              .map((item) => (
+              .map((item, key) => (
                 <Prize
-                  key={item}
+                  key={key}
                   sponsor="Devfolio"
                   amount="$100K"
                   byDevfolio={true}
