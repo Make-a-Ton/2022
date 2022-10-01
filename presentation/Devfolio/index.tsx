@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from "@presentation/common/Button";
 import * as React from "react";
 
@@ -17,16 +18,16 @@ const Devfolio = () => {
     }
   });
 
-  React.useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://apply.devfolio.co/v2/sdk.js";
+  //   script.async = true;
+  //   script.defer = true;
+  //   document.body.appendChild(script);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   return (
     <motion.div
@@ -62,7 +63,7 @@ const Devfolio = () => {
           </motion.div>
         </AnimatePresence>
       )}
-      {/* <Button
+      <Button
         className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px]"
         href="https://makeaton.devfolio.co"
       >
@@ -73,13 +74,13 @@ const Devfolio = () => {
           width={20}
         />{" "}
         <span className="ml-[6px]">Register on Devfolio</span>
-      </Button> */}
-      <div
+      </Button>
+      {/* <div
         className="apply-button"
-        data-hackathon-slug="makeaton5.0"
+        data-hackathon-slug="makeaton-5"
         data-button-theme="light"
         style={{ height: "44px", width: "312px" }}
-      ></div>
+      ></div> */}
     </motion.div>
   );
 };

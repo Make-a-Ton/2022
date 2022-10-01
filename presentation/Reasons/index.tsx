@@ -1,4 +1,5 @@
 import BulletPoints from "@presentation/common/BulletPoints";
+import { Prizes, ReasonsContent } from "@presentation/common/Contents";
 import Prize from "@presentation/common/Prize";
 import React from "react";
 
@@ -18,11 +19,8 @@ const Reasons = () => {
         <h3 className="text-white leading-[50px] z-20 font-bold text-4xl uppercase pb-[10px]">
           Make-A-Ton 5.0
         </h3>
-        {[0, 1, 2, 3, 4].map((item) => (
-          <BulletPoints key={item}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </BulletPoints>
+        {ReasonsContent.map((item, key) => (
+          <BulletPoints key={key}>{item}</BulletPoints>
         ))}
       </div>
       <div className="py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
@@ -33,16 +31,14 @@ const Reasons = () => {
         </div>
         <div className="flex flex-col mt-[60px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px]">
-            {Array(9)
-              .fill(null)
-              .map((item, key) => (
-                <Prize
-                  key={key}
-                  sponsor="Devfolio"
-                  amount="$100K"
-                  byDevfolio={true}
-                />
-              ))}
+            {Prizes.map(({ sponsor, amount, byDevfolio }, key) => (
+              <Prize
+                key={key}
+                sponsor={sponsor}
+                amount={"TBD"}
+                byDevfolio={byDevfolio}
+              />
+            ))}
           </div>
           <div className="pt-[60px] flex flex-col">
             <p className="text-white text-2xl pb-[10px]">
@@ -53,7 +49,10 @@ const Reasons = () => {
               Polygon & Replit!
             </p>
             <small className="text-white text-lg">
-              * - Prizes given by Devfolio
+              * - Prizes given by Devfolio, which Make-a-Ton has no control over
+              sponsored tracks. Final Judgement will be done by the sponsors
+              only. Make-a-Ton 5.0 organizers have no responsibility in these
+              tracks.
             </small>
           </div>
         </div>

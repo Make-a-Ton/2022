@@ -89,7 +89,7 @@ const Hero = () => {
         <motion.div variants={item}>
           <motion.div
             className="apply-button"
-            data-hackathon-slug="makeaton5.0"
+            data-hackathon-slug="makeaton-5"
             data-button-theme="light"
             style={{ height: "44px", width: "312px" }}
           ></motion.div>

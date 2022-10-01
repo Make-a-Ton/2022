@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import FAQ from "@presentation/common/FAQ";
+import { FAQS } from "@presentation/common/Contents";
 
 const FAQs = () => {
   const container = {
@@ -31,11 +32,9 @@ const FAQs = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.35 }}
         >
-          {Array(10)
-            .fill({ question: "Is registration free?", answer: "Yes" })
-            .map(({ question, answer }, key) => (
-              <FAQ question={question} answer={answer} key={key} />
-            ))}
+          {FAQS.map(({ ques, ans }, key) => (
+            <FAQ question={ques} answer={ans} key={key} />
+          ))}
         </motion.div>
       </motion.div>
     </section>
