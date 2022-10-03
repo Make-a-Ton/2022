@@ -11,7 +11,7 @@ const Devfolio = () => {
   const { scrollY } = useScroll();
 
   scrollY.onChange((s) => {
-    if (window.innerWidth > 720) {
+    if (typeof window !== "undefined" && window.innerWidth > 720) {
       if (s > 500) {
         setHidden(true);
       } else {
@@ -45,7 +45,7 @@ const Devfolio = () => {
       }}
       className="z-[9999] font-montserrat fixed lg:left-[120px] bottom-0 md:bottom-auto w-full md:w-fit md:top-0 text-white bg-primary-light p-[20px] md:p-[12px] md:rounded-b-[10px] min-w-[220px]"
     >
-      {(window.innerWidth < 720 || !hidden) && (
+      {typeof window !== "undefined" && (window.innerWidth < 720 || !hidden) && (
         <AnimatePresence>
           <motion.div
             initial={{ opacity: 0, height: 0 }}
