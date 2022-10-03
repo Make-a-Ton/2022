@@ -1,16 +1,39 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-const platinumSponsors = [
-  "/assets/sponsors/Devfolio.png",
-  "/assets/sponsors/Polygon.png",
-  "/assets/sponsors/cittic.svg",
+interface Sponsors {
+  link: string;
+  image: string;
+}
+
+const platinumSponsors: Sponsors[] = [
+  {
+    link: "https://devfolio.co",
+    image: "/assets/sponsors/Devfolio.png",
+  },
+  {
+    link: "https://polygon.technology/",
+    image: "/assets/sponsors/Polygon.png",
+  },
+  {
+    link: "https://cittic.cusat.ac.in/",
+    image: "/assets/sponsors/cittic.svg",
+  },
 ];
 
-const goldSponsors = [
-  "/assets/sponsors/Solana.png",
-  "/assets/sponsors/Tezos.png",
-  "/assets/sponsors/Replit.png",
+const goldSponsors: Sponsors[] = [
+  {
+    link: "https://solana.com/",
+    image: "/assets/sponsors/Solana.png",
+  },
+  {
+    link: "https://replit.com/",
+    image: "/assets/sponsors/Replit.png",
+  },
+  {
+    link: "https://filecoin.io/",
+    image: "/assets/sponsors/Filecoin.png",
+  },
 ];
 
 const Sponsors = () => {
@@ -37,7 +60,7 @@ const Sponsors = () => {
   );
 };
 
-const SponsorsRow = ({ sponsors }: { sponsors: string[] }) => {
+const SponsorsRow = ({ sponsors }: { sponsors: Sponsors[] }) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -61,18 +84,16 @@ const SponsorsRow = ({ sponsors }: { sponsors: string[] }) => {
       viewport={{ once: false, amount: 0.35 }}
       className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[30px]"
     >
-      {sponsors.map((sponsor) => (
+      {sponsors.map(({ link, image }) => (
         <motion.div
           variants={item}
           className="duration-150 ease-linear transform hover:scale-105 py-[40px] px-[20px] shadow-xl rounded flex items-center justify-center bg-primary-dark"
-          key={sponsor}
+          key={link}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={sponsor}
-            alt={sponsor}
-            className="h-[50px]  object-contain"
-          />
+          <a href={link} target="__blank">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={image} alt={image} className="h-[50px]  object-contain" />
+          </a>
         </motion.div>
       ))}
     </motion.div>
