@@ -66,8 +66,8 @@ const Devfolio = () => {
         </AnimatePresence>
       )}
       <Button
-        className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px]"
-        href="https://makeaton.devfolio.co"
+        className="font-source-sans-pro text-[20px] h-[44px] w-[312px] font-[500] bg-[#3770ff] flex items-center justify-center rounded-[4px]"
+        href="https://makeaton-5.devfolio.co"
       >
         <img
           src="/assets/icons/devfolio.svg"
@@ -75,7 +75,7 @@ const Devfolio = () => {
           height={20}
           width={20}
         />{" "}
-        <span className="ml-[6px]">Register on Devfolio</span>
+        <span className="ml-[6px]">Apply with Devfolio</span>
       </Button>
       {/* <div
         className="apply-button"

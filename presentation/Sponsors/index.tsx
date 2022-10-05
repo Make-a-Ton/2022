@@ -15,10 +15,6 @@ const platinumSponsors: Sponsors[] = [
     link: "https://polygon.technology/",
     image: "/assets/sponsors/Polygon.png",
   },
-  {
-    link: "https://cittic.cusat.ac.in/",
-    image: "/assets/sponsors/cittic.svg",
-  },
 ];
 
 const goldSponsors: Sponsors[] = [
@@ -33,6 +29,10 @@ const goldSponsors: Sponsors[] = [
   {
     link: "https://filecoin.io/",
     image: "/assets/sponsors/Filecoin.png",
+  },
+  {
+    link: "https://indiafoss.net/",
+    image: "/assets/sponsors/IndiaFOSS.svg",
   },
 ];
 
