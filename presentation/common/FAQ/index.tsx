@@ -14,6 +14,7 @@ const rotateVariants = {
 const FAQ = ({ question, answer }: { question: string; answer: string }) => {
   const [expanded, setExpanded] = useState<boolean>(false);
   const [height, setHeight] = useState<number>(0);
+  const [questionHeight, setQuestionHeight] = useState<number>(0);
 
   const questionTitle = React.useRef<any>(null);
   const questionAnswer = React.useRef<any>(null);
@@ -24,6 +25,7 @@ const FAQ = ({ question, answer }: { question: string; answer: string }) => {
         questionAnswer?.current?.clientHeight +
         32
     );
+    setQuestionHeight(questionTitle?.current?.clientHeight + 40);
   }, [questionAnswer]);
 
   const variants = {
@@ -31,7 +33,7 @@ const FAQ = ({ question, answer }: { question: string; answer: string }) => {
       height,
     },
     stop: {
-      height: 90,
+      height: questionHeight,
     },
   };
 
