@@ -34,6 +34,10 @@ const goldSponsors: Sponsors[] = [
     link: "https://indiafoss.net/",
     image: "/assets/sponsors/IndiaFOSS.svg",
   },
+  {
+    link: "#",
+    image: "/assets/sponsors/IEEE.png",
+  },
 ];
 
 const Sponsors = () => {
