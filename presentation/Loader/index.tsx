@@ -71,7 +71,7 @@ const Loader = ({
           }}
           variants={itemMain}
           layoutId="main-image"
-          className="h-[400px]"
+          className="h-[400px] w-full md:w-auto object-cover"
         />
         <motion.div
           animate={{
