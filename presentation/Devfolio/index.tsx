@@ -11,12 +11,10 @@ const Devfolio = () => {
   const { scrollY } = useScroll();
 
   scrollY.onChange((s) => {
-    if (typeof window !== "undefined" && window.innerWidth > 720) {
-      if (s > 500) {
-        setHidden(true);
-      } else {
-        setHidden(false);
-      }
+    if (s > 500) {
+      setHidden(true);
+    } else {
+      setHidden(false);
     }
   });
 
@@ -43,9 +41,9 @@ const Devfolio = () => {
         ease: [0.6, 0.01, -0.05, 0.95],
         delay: 2,
       }}
-      className="z-[9999] font-montserrat fixed lg:left-[120px] bottom-0 md:bottom-auto w-full md:w-fit md:top-0 text-white bg-primary-light p-[20px] md:p-[12px] md:rounded-b-[10px] min-w-[220px]"
+      className="z-[9999] font-montserrat fixed lg:left-[120px] bottom-0 md:bottom-auto w-full md:w-fit md:top-0 text-white bg-primary-light p-[20px] md:p-[12px] rounded-t-[10px] md:rounded-none md:rounded-b-[10px] min-w-[220px]"
     >
-      {typeof window !== "undefined" && (window.innerWidth < 720 || !hidden) && (
+      {!hidden && (
         <AnimatePresence>
           <motion.div
             initial={{ opacity: 0, height: 0 }}
@@ -66,7 +64,7 @@ const Devfolio = () => {
         </AnimatePresence>
       )}
       <Button
-        className="font-source-sans-pro text-[20px] h-[44px] w-[312px] font-[500] bg-[#3770ff] flex items-center justify-center rounded-[4px]"
+        className="font-source-sans-pro text-[20px] h-[44px] w-full md:w-[312px] font-[500] bg-[#3770ff] flex items-center justify-center rounded-[4px]"
         href="https://makeaton-5.devfolio.co"
       >
         <img
