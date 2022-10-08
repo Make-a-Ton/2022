@@ -26,7 +26,7 @@ const Reasons = () => {
       <div className="py-[60px] md:py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
         <div className="flex justify-end">
           <h2 className="font-montserrat leading-[50px] md:leading-[78px] text-4xl md:text-6xl font-extrabold  gradient-primary gradient-text">
-            Prizes worth $125K+
+            Prizes worth ₹125K+
           </h2>
         </div>
         <div className="flex flex-col mt-[60px]">
