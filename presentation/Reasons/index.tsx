@@ -42,7 +42,7 @@ const Reasons = () => {
           </div>
           <div className="pt-[60px] flex flex-col">
             <p className="text-white text-lg md:text-2xl pb-[10px]">
-              Schwags from Make-a-ton, Replit, GitHub, GCP, AWS and more!
+            Swags from Make-a-ton, Replit, GitHub, GCP, AWS and more!
             </p>
             <p className="text-white text-lg md:text-2xl pb-[10px]">
               Eligibility to apply for internships and full-time roles at
