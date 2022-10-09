@@ -17,6 +17,7 @@ import {
 import { ScrollerMotion, ScrollerMotionRef } from "scroller-motion";
 import FAQ from "@presentation/FAQ";
 import HeadMeta from "@presentation/HeadMeta";
+import Footer from "@presentation/Footer";
 
 // import HeroBG from "@public/assets/hero-bg.svg";
 
@@ -57,6 +58,7 @@ const Home: NextPage = () => {
               {/* <Schedule /> */}
               <Sponsors />
               <FAQ />
+              <Footer />
             </>
           )}
         </ScrollerMotion>
