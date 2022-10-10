@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export const FAQS: { ques: string; ans: string }[] = [
   {
     ques: "Is registration free?",
@@ -87,4 +89,32 @@ export const ReasonsContent: string[] = [
   "Opportunity to take home prizes and swags worth 125K.",
 
   "Opportunity to get internships.",
+];
+
+export const ScheduleData: {
+  title: string;
+  location?: string;
+  timing: string;
+  link?: string;
+}[] = [
+  {
+    title: "Registration Starts",
+    timing: "5th October",
+    location: "Devfolio",
+    link: "https://makeaton-5.devfolio.co",
+  },
+  {
+    title: "Registration Ends",
+    timing: "15th October, 11:49PM",
+    location: "Devfolio",
+    link: "https://makeaton-5.devfolio.co",
+  },
+  {
+    title: "Reporting at the venue",
+    timing: "27th October, 8:30AM - 9:30AM",
+  },
+  {
+    title: "Hackathon Ends",
+    timing: "28th October, 2PM",
+  },
 ];

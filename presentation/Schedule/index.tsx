@@ -2,6 +2,7 @@ import TimelinePoint from "@presentation/common/TimelinePoint";
 
 import { HiLocationMarker } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { ScheduleData } from "@presentation/common/Contents";
 
 const Schedule = () => {
   const container = {
@@ -27,22 +28,24 @@ const Schedule = () => {
           viewport={{ once: false, amount: 0.35 }}
           className="flex flex-col mt-[60px]"
         >
-          {Array(10)
-            .fill(null)
-            .map((_, key) => (
-              <TimelinePoint
-                title="Reporting at the venue"
-                description={
+          {ScheduleData.map(({ title, location, timing, link }, key) => (
+            <TimelinePoint
+              title={title}
+              description={
+                <a href={link ?? "https://cittic.cusat.ac.in"} target="__blank">
                   <div className="flex items-center text-gray-300">
                     <HiLocationMarker size={22} />{" "}
-                    <span className="ml-[10px] text-[24px]">CITTIC, CUSAT</span>
+                    <span className="ml-[10px] text-[24px]">
+                      {location ?? "CITTIC, CUSAT"}
+                    </span>
                   </div>
-                }
-                timing="8:30AM - 9:00AM"
-                num={key}
-                key={key}
-              />
-            ))}
+                </a>
+              }
+              timing={timing}
+              num={key}
+              key={key}
+            />
+          ))}
         </motion.div>
       </div>
     </section>
