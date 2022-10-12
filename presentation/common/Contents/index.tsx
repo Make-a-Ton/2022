@@ -46,17 +46,17 @@ export const Prizes: {
 }[] = [
   {
     sponsor: "1st Prize",
-    amount: "TBD",
+    amount: "₹30K",
     byDevfolio: false,
   },
   {
     sponsor: "2nd Prize",
-    amount: "TBD",
+    amount: "₹20K",
     byDevfolio: false,
   },
   {
     sponsor: "Hack for Cusat",
-    amount: "TBD",
+    amount: "₹20K",
     byDevfolio: false,
   },
   {
