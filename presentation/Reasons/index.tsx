@@ -26,7 +26,7 @@ const Reasons = () => {
       <div className="py-[60px] md:py-[120px] mx-auto w-full max-w-[1440px] px-[32px] md:px-[64px] lg:px-[120px]">
         <div className="flex justify-end">
           <h2 className="font-montserrat leading-[50px] md:leading-[78px] text-4xl md:text-6xl font-extrabold  gradient-primary gradient-text">
-            Prizes worth ₹125K+
+            Prizes worth ₹400K+
           </h2>
         </div>
         <div className="flex flex-col mt-[60px]">
@@ -35,14 +35,14 @@ const Reasons = () => {
               <Prize
                 key={key}
                 sponsor={sponsor}
-                amount={"TBD"}
+                amount={amount}
                 byDevfolio={byDevfolio}
               />
             ))}
           </div>
           <div className="pt-[60px] flex flex-col">
             <p className="text-white text-lg md:text-2xl pb-[10px]">
-            Swags from Make-a-ton, Replit, GitHub, GCP, AWS and more!
+              Swags from Make-a-ton, GDG Cloud, GitHub, GCP, AWS and more!
             </p>
             <p className="text-white text-lg md:text-2xl pb-[10px]">
               Eligibility to apply for internships and full-time roles at

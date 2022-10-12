@@ -46,22 +46,22 @@ export const Prizes: {
 }[] = [
   {
     sponsor: "1st Prize",
-    amount: "₹30K",
+    amount: "TBD",
     byDevfolio: false,
   },
   {
     sponsor: "2nd Prize",
-    amount: "₹15K",
+    amount: "TBD",
     byDevfolio: false,
   },
   {
     sponsor: "Hack for Cusat",
-    amount: "₹5K",
+    amount: "TBD",
     byDevfolio: false,
   },
   {
     sponsor: "Polygon",
-    amount: "₹25K",
+    amount: "₹10K",
     byDevfolio: true,
   },
   {
@@ -71,12 +71,12 @@ export const Prizes: {
   },
   {
     sponsor: "Solana",
-    amount: "$600",
+    amount: "$100",
     byDevfolio: true,
   },
   {
     sponsor: "Replit",
-    amount: "$50",
+    amount: "₹5000",
     byDevfolio: true,
   },
 ];
@@ -84,9 +84,9 @@ export const Prizes: {
 export const ReasonsContent: string[] = [
   "Get mentored from industry experts to help you build better.",
 
-  " Meet students from all over India and be exposed to a wide range of ideas.",
+  "Meet students from all over India and be exposed to a wide range of ideas.",
 
-  "Opportunity to take home prizes and swags worth 125K.",
+  "Opportunity to take home prizes and swags worth 400K.",
 
   "Opportunity to get internships.",
 ];
