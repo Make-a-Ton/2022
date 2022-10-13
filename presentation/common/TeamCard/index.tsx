@@ -14,7 +14,7 @@ const TeamCard = ({
   photo: string;
 }) => {
   return (
-    <div className="group">
+    <div className="group cursor-pointer">
       <div className="aspect-square overflow-hidden w-full relative mb-[15px] rounded-[6px]">
         <div className="aspect-square w-full rounded-[6px] group-hover:brightness-100 brightness-75 duration-200 transition-all group-hover:scale-110">
           <motion.img
