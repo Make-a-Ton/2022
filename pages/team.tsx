@@ -30,15 +30,15 @@ const Team: NextPage = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.35,
-        delayChildren: 2.6,
+        delayChildren: 0.5,
         ease: [0.6, 0.01, -0.05, 0.95],
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, x: 50 },
+    show: { opacity: 1, x: 0 },
   };
 
   return (
@@ -53,12 +53,7 @@ const Team: NextPage = () => {
           keywords="hackathon, makeaton, event"
         />
         <section className="relative pt-[200px] h-full z-[10] min-h-screen  mx-auto max-w-[1440px] px-[32px] md:px-[64px] lg:px[120px]">
-          <div
-            // initial="hidden"
-            // animate="show"
-            // variants={container}
-            className="flex flex-col relative px-[32px] md:px-[64px] lg:px-[120px] "
-          >
+          <div className="flex flex-col relative px-[32px] md:px-[64px] lg:px-[120px] ">
             <motion.p
               variants={item}
               className="font-black uppercase text-white text-[20px]"
@@ -68,13 +63,17 @@ const Team: NextPage = () => {
             <h1 className="font-montserrat relative gradient-hero gradient-text md:leading-[59px] text-[48px] md:text-[72px] font-black">
               Meet the team
             </h1>
-            <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px] my-[60px]">
+            <motion.div
+              initial="hidden"
+              animate="show"
+              variants={container}
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px] my-[60px] mb-[120px]"
+            >
               {TeamDetails.map(
                 ({ name, photo, github, linkedin, twitter }, key) => (
-                  <TeamCard
-                    key={key}
-                    {...{ name, photo, github, linkedin, twitter }}
-                  />
+                  <motion.div key={key} variants={item}>
+                    <TeamCard {...{ name, photo, github, linkedin, twitter }} />
+                  </motion.div>
                 )
               )}
             </motion.div>
