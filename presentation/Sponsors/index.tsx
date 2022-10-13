@@ -15,9 +15,21 @@ const platinumSponsors: Sponsors[] = [
     link: "https://polygon.technology/",
     image: "/assets/sponsors/Polygon.png",
   },
+  {
+    link: "https://xenaintelligence.com/",
+    image: "/assets/sponsors/xena.svg",
+  },
+  {
+    link: "https://gdg.community.dev/gdg-cloud-kochi/",
+    image: "/assets/sponsors/GDGCloudLight.jpg",
+  },
 ];
 
 const goldSponsors: Sponsors[] = [
+  {
+    link: "https://github.com",
+    image: "/assets/sponsors/github.png",
+  },
   {
     link: "https://solana.com/",
     image: "/assets/sponsors/Solana.png",
@@ -37,10 +49,6 @@ const goldSponsors: Sponsors[] = [
   {
     link: "#",
     image: "/assets/sponsors/IEEE.png",
-  },
-  {
-    link: "https://gdg.community.dev/gdg-cloud-kochi/",
-    image: "/assets/sponsors/GDGCloudLight.jpg",
   },
 ];
 

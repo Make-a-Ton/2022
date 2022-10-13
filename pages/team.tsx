@@ -1,3 +1,4 @@
+import { TeamDetails } from "@presentation/common/Contents";
 import TeamCard from "@presentation/common/TeamCard";
 import Devfolio from "@presentation/Devfolio";
 import HeadMeta from "@presentation/HeadMeta";
@@ -68,11 +69,14 @@ const Team: NextPage = () => {
               Meet the team
             </h1>
             <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px] my-[60px]">
-              {Array(10)
-                .fill(null)
-                .map((_, key) => (
-                  <TeamCard key={key} />
-                ))}
+              {TeamDetails.map(
+                ({ name, photo, github, linkedin, twitter }, key) => (
+                  <TeamCard
+                    key={key}
+                    {...{ name, photo, github, linkedin, twitter }}
+                  />
+                )
+              )}
             </motion.div>
           </div>
         </section>

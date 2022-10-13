@@ -118,3 +118,82 @@ export const ScheduleData: {
     timing: "28th October, 2PM",
   },
 ];
+
+export const TeamDetails: {
+  name: string;
+  twitter?: string;
+  linkedin?: string;
+  github?: string;
+  photo: string;
+}[] = [
+  {
+    name: "Abhinav T B",
+    twitter: "https://twitter.com/abhigamez",
+    linkedin: "https://www.linkedin.com/in/abhinav-t-b-226172190/",
+    github: "https://github.com/abhinav-TB",
+    photo: "/assets/team/tb.jpeg",
+  },
+  {
+    name: "Abhinav Rajesh",
+    twitter: "https://twitter.com/_AbhinavRajesh_",
+    linkedin: "https://linkedin.com/in/abhinavrajesh",
+    github: "https://github.com/AbhinavRajesh",
+    photo: "https://github.com/AbhinavRajesh.png",
+  },
+  {
+    name: "Ajal P",
+    twitter: "https://twitter.com/ajal_333",
+    linkedin: "https://www.linkedin.com/in/ajal/",
+    github: "https://github.com/ajal333",
+    photo: "/assets/team/ajal.jpg",
+  },
+  {
+    name: "Sunith vs",
+    // twitter: "https://twitter.com/ajal_333",
+    linkedin: "https://www.linkedin.com/in/sunithvs",
+    github: "https://github.com/sunithvs",
+    photo: "/assets/team/sunith.jpg",
+  },
+  {
+    name: "Rohit T P",
+    twitter: "https://twitter.com/tprohit",
+    linkedin: "https://www.linkedin.com/in/rohit-tp",
+    github: "https://github.com/rohittp0",
+    photo: "/assets/team/rohit.jpeg",
+  },
+  {
+    name: "Abdul Hakkeem P A",
+    twitter: "https://twitter.com/abdulhakkeempa",
+    linkedin: "https://in.linkedin.com/in/abdul-hakkeem-pa",
+    github: "https://github.com/abdulhakkeempa",
+    photo: "/assets/team/hakkeem.jpg",
+  },
+  {
+    name: "Anito Anto",
+    twitter: "https://twitter.com/anito_anto",
+    linkedin: "https://in.linkedin.com/in/anitoanto",
+    github: "https://github.com/anitoanto",
+    photo: "/assets/team/anito.jpg",
+  },
+  {
+    name: "Varsha Shaheen",
+    // twitter: "https://twitter.com/ajal_333",
+    linkedin: "https://www.linkedin.com/in/varsha-shaheen-a10295231",
+    github: "https://github.com/varshashaheen",
+    photo: "/assets/team/varsha.jpg",
+  },
+  {
+    name: "Aswin Pradeep C",
+    twitter: "https://twitter.com/_h_a_rr_y_",
+    linkedin: "https://www.linkedin.com/in/aswin-pradeep-73b832224",
+    github: "https://github.com/H-a-rr-y",
+    photo: "/assets/team/aswin.jpg",
+  },
+  {
+    name: "Sidharth S Mohan",
+    // twitter: "https://twitter.com/ajal_333",
+    linkedin: "https://www.linkedin.com/in/sidharth-s-mohan-47125a21b",
+    // github: "https://github.com/ajal333",
+    photo: "/assets/team/sidharth.jpg",
+  },
+];
