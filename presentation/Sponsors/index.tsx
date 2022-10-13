@@ -32,7 +32,7 @@ const goldSponsors: Sponsors[] = [
   },
   {
     link: "https://indiafoss.net/",
-    image: "/assets/sponsors/IndiaFOSS.svg",
+    image: "/assets/sponsors/FOSS.png",
   },
   {
     link: "#",
