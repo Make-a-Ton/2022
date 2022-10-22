@@ -50,6 +50,10 @@ const goldSponsors: Sponsors[] = [
     link: "#",
     image: "/assets/sponsors/IEEE.png",
   },
+    {
+    link: "https://awsugkochi.in/",
+    image: "https://awsugkochi.in/static/awsugkochi-logo-86bedb3a87c7b71caa9cda8aa605d686.png",
+  },
 ];
 
 const Sponsors = () => {
