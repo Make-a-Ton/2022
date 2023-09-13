@@ -88,9 +88,9 @@ const Footer = () => {
             </div>
           </div>
           <p className="copyright-text w-full text-center">
-            <Link href="/team">
+            {/* <Link href="/team">
               <span className="cursor-pointer">Meet the team &hearts;</span>
-            </Link>{" "}
+            </Link>{" "} */}
             | Code of conduct CITTIC &copy; 2023
           </p>
         </div>
