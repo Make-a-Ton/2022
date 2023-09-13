@@ -80,7 +80,6 @@ const Team: NextPage = () => {
           </div>
         </section>
       </ScrollerMotion>
-      <Devfolio />
     </AnimatePresence>
   );
 };

@@ -37,8 +37,8 @@ const Footer = () => {
                 </a>
               </p>
               <p className="copyright-text">
-                <a href="tel:9188692836" style={{ textDecoration: "none" }}>
-                  Ajal - 9188692836
+                <a href="tel:9020277399" style={{ textDecoration: "none" }}>
+                  Rohit T.P - 9020277399
                 </a>
               </p>
               <br />
@@ -91,7 +91,7 @@ const Footer = () => {
             <Link href="/team">
               <span className="cursor-pointer">Meet the team &hearts;</span>
             </Link>{" "}
-            | Code of conduct CITTIC &copy; 2022
+            | Code of conduct CITTIC &copy; 2023
           </p>
         </div>
       </div>

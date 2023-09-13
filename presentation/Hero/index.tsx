@@ -3,17 +3,6 @@ import * as React from "react";
 import { motion, Variants } from "framer-motion";
 
 const Hero = () => {
-  React.useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   const container: Variants = {
     hidden: { opacity: 0 },
     show: {
@@ -77,7 +66,7 @@ const Hero = () => {
             Make-a-ton
           </h1>
           <span className="absolute font-semibold text-[18px] md:text-[72px] right-[-1.6em] top-[-0.1em] text-primary-light z-[10]">
-            5.o
+            6.o
           </span>
         </motion.div>
         <motion.p

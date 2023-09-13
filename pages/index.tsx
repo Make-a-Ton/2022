@@ -40,7 +40,7 @@ const Home: NextPage = () => {
       <AnimatePresence>
         <ScrollerMotion ref={scrollerMotion}>
           <HeadMeta
-            title="Make-a-ton 5.0 | CITTIC"
+            title="Make-a-ton 6.0 | CITTIC"
             description="A 24 hour flagship hackathon from Cochin University of Science and Technology
         for University students to embrace the spirit of innovation."
             image="https://makeaton.in/ograph.jpg"
@@ -55,14 +55,11 @@ const Home: NextPage = () => {
             <>
               <Hero />
               <Reasons />
-              <Schedule />
-              <Sponsors />
               <FAQ />
               <Footer />
             </>
           )}
         </ScrollerMotion>
-        {!loading && <Devfolio />}
       </AnimatePresence>
     </AnimateSharedLayout>
   );
