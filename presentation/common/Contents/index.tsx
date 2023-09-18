@@ -2,6 +2,14 @@ import { ReactNode } from "react";
 
 export const FAQS: { ques: string; ans: string }[] = [
   {
+    ques: "What is the prize money",
+    ans: "First Prize - 30K, Second Prize: 20K. Track prices to be announced soon"
+  },
+  {
+    ques: "What all tracks are available",
+    ans: "Seperate track for Software and Hardware"
+  },
+  {
     ques: "Is registration free?",
     ans: "Yes, registration is  free of charge.",
   },
