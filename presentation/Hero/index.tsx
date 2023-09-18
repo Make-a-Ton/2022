@@ -83,19 +83,13 @@ const Hero = () => {
             style={{ height: "44px", width: "312px" }}
           ></motion.div>
         </motion.div>
-        {/* <Button
+        <Button
           className="font-source-sans-pro text-[16px] font-bold bg-devfolio flex items-center rounded-[5px] mt-[15px] text-white"
-          href="https://makeaton.devfolio.co"
+          href="https://forms.eventsradar.in/makeaton/"
           variants={item}
         >
-          <img
-            src="/assets/icons/devfolio.svg"
-            alt="Devfolio Logo"
-            height={20}
-            width={20}
-          />
-          <span className="ml-[6px]">Register on Devfolio</span>
-        </Button> */}
+          <span className="ml-[6px]">Register For Make-a-Ton</span>
+        </Button>
       </motion.div>
     </section>
   );
