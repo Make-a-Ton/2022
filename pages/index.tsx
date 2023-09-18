@@ -55,6 +55,7 @@ const Home: NextPage = () => {
             <>
               <Hero />
               <Reasons />
+              <Schedule />
               <FAQ />
               <Footer />
             </>

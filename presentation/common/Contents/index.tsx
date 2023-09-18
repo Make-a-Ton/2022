@@ -99,23 +99,23 @@ export const ScheduleData: {
 }[] = [
   {
     title: "Registration Starts",
-    timing: "5th October",
-    location: "Devfolio",
-    link: "https://makeaton-5.devfolio.co",
+    timing: "18th September",
+    location: "Online",
+    link: "https://forms.eventsradar.in/makeaton/",
   },
   {
     title: "Registration Ends",
-    timing: "15th October, 11:49PM",
-    location: "Devfolio",
-    link: "https://makeaton-5.devfolio.co",
+    timing: "5th October, 11:49PM",
+    location: "Online",
+    link: "https://forms.eventsradar.in/makeaton/",
   },
   {
     title: "Reporting at the venue",
-    timing: "27th October, 8:30AM - 9:30AM",
+    timing: "4th November, 8:30AM - 9:30AM",
   },
   {
     title: "Hackathon Ends",
-    timing: "28th October, 2PM",
+    timing: "5th November, 2PM",
   },
 ];
 
