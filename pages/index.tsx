@@ -3,7 +3,6 @@ import type { NextPage } from "next";
 import Devfolio from "@presentation/Devfolio";
 import Reasons from "@presentation/Reasons";
 import Schedule from "@presentation/Schedule";
-import Sponsors from "@presentation/Sponsors";
 import Hero from "@presentation/Hero";
 import { useEffect, useRef, useState } from "react";
 import Loader from "@presentation/Loader";
@@ -61,6 +60,7 @@ const Home: NextPage = () => {
             </>
           )}
         </ScrollerMotion>
+        {!loading && <Devfolio />}
       </AnimatePresence>
     </AnimateSharedLayout>
   );

@@ -55,7 +55,7 @@ const Devfolio = () => {
               bounce: 0.5,
             }}
           >
-            <h2 className="font-black text-[22px]">Oct. 27 & 28</h2>
+            <h2 className="font-black text-[22px]">Nov. 4 & 5</h2>
             <p className="text-[16px] font-medium">Offline</p>
             <p className="flex items-center text-[14px] font-medium mt-[10px] mb-[15px]">
               <MdLocationPin size="2em" color="#FFFFFF" /> CITTIC, CUSAT
@@ -65,15 +65,10 @@ const Devfolio = () => {
       )}
       <Button
         className="font-source-sans-pro text-[20px] h-[44px] w-full md:w-[312px] font-[500] bg-[#3770ff] flex items-center justify-center rounded-[4px]"
-        href="https://makeaton-5.devfolio.co"
+        href="https://forms.eventsradar.in/makeaton/"
       >
-        <img
-          src="/assets/icons/devfolio.svg"
-          alt="Devfolio Logo"
-          height={20}
-          width={20}
-        />{" "}
-        <span className="ml-[6px]">Apply with Devfolio</span>
+       {" "}
+        <span className="ml-[6px]">Apply for Make-a-Ton</span>
       </Button>
       {/* <div
         className="apply-button"
