@@ -36,7 +36,7 @@ const Schedule = () => {
                   <div className="flex items-center text-gray-300">
                     <HiLocationMarker size={22} />{" "}
                     <span className="ml-[10px] text-[24px]">
-                      {location ?? "CITTIC, CUSAT"}
+                      {location ?? "CUSAT"}
                     </span>
                   </div>
                 </a>
